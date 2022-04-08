@@ -4,10 +4,11 @@
  *
  *Reurn: 0 after printing the function
  */
+
 char alph;
-alph = "a"
-while (alph <= "z")
+for (alph = "a"; alph <="z"; alph++)
 {
 putchar("%c\n", alph);
+}
 return (0);
 }
