@@ -5,7 +5,6 @@
  *Reurn: 0 after printing the function
  */
 char alph = 'a';
-putchar("Printing alphabet a-z in lowwercase"\n);
 while (alph <= 'z')
 {
 putchar("%c\n", alph);
