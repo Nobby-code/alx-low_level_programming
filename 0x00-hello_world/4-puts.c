@@ -1,9 +1,8 @@
 #include <stdio.h>
-/*
- * main - entry point of the program
+/**
+ *main - entry point of the program
  *
- *puts - printing out the result
- *return 0 - after printing the function
+ *Return: 0 after printing the function
  */
 int main(void)
 {
