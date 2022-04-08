@@ -4,8 +4,9 @@
  *
  *Reurn: 0 after printing the function
  */
-char alph = 'a';
-while (alph <= 'z')
+char alph;
+alph = "a"
+while (alph <= "z")
 {
 putchar("%c\n", alph);
 return (0);
