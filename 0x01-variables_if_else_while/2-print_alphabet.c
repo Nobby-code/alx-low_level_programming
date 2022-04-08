@@ -6,10 +6,11 @@
  */
 int main(void)
 {
-char alph;
-for (alph = "a"; alph <="z"; alph++)
+char ch = 'a';
+while (ch <= 'z')
 {
-putchar("%c\n", alph);
+putchar("%c", ch);
+ch++;
 }
 return (0);
 }
