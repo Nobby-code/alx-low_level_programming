@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
- *main() - is the entry point of the program
+ *main - is the entry point of the program
  *
- *printf - inbuilt func to print out 
  *return: 0 after printing the function
- *
  */
 int main(void)
 {
