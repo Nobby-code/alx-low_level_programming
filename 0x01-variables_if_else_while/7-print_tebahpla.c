@@ -9,8 +9,8 @@ int main(void)
 char c;
 for (c = 'z'; c >= 'a'; c--)
 {
-putchat(c);
+putchar(c);
 }
-putchr('\n');
+putchar('\n');
 return (0);
 }
