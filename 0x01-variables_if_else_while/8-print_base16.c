@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ *main - entry point of the program to print hexadeximal
+ *
+ *return: 0 doesnot return any value
+ */
 int main(void)
 {
 int num;
