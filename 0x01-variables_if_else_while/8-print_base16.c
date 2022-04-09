@@ -2,7 +2,7 @@
 /**
  *main - entry point of the program to print hexadeximal
  *
- *Return: 0 doesnot return any value 
+ *Return: 0 when the function runs successfully 
  */
 int main(void)
 {
