@@ -14,15 +14,14 @@ int main(void)
 		{
 			for (k = 0; k <= 9; k++)
 			{
-				if (i == j && j == k && k == i)
+				if (i != j && j != k)
 				{
-					continue;
+					putchar(i = '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					putchar (',');
+					putchar(' ');
 				}
-				putchar(i = '0');
-				putchar(j + '0');
-				putchar(k + '0');
-				putchar (',');
-				putchar(' ');
 				
 			}
 		}
