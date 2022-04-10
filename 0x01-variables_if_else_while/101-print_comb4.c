@@ -16,13 +16,13 @@ int main(void)
 			{
 				if (i != j && j != k && k != i)
 				{
-					if (i == 7 && j == 8 && k == 9)
-					{
-						continue;
-					}
 					putchar(i + '0');
 					putchar(j + '0');
 					putchar(k + '0');
+					if (i == 7 && j == 8 && k == 9)
+					{
+						break;
+					}
 					putchar (',');
 					putchar(' ');
 				}
