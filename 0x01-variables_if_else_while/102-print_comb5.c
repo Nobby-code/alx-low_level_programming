@@ -2,7 +2,7 @@
 /**
  *main - printing two combinations of two-diggit numbers
  *
- *Return: Always return 0
+ *Return: Always return 0 (success)
  */
 int main(void)
 {
@@ -25,6 +25,6 @@ int main(void)
 			putchar(' ');
 		}
 	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
