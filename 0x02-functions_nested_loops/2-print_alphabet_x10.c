@@ -2,7 +2,6 @@
 /**
  *print_alphabet_x10 - Entry point of the program
  *
- *Return: Always return 0 (success)
  */
 void print_alphabet_x10(void)
 {
@@ -17,5 +16,4 @@ void print_alphabet_x10(void)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
