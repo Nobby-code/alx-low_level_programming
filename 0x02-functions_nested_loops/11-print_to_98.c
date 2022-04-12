@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  *print_to_98 -  function that prints from a given number to 98
+ *@n: takes in an integer value
  *
  */
 void print_to_98(int n)
@@ -10,10 +11,10 @@ void print_to_98(int n)
 	{
 		for (; n < 98; n++)
 		{
-			printf("%d, ",n);
+			printf("%d, ", n);
 		}
 	}
-	else if(n > 98)
+	else if (n > 98)
 	{
 		for (; n > 98; n--)
 		{
