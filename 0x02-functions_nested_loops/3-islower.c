@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_islower - Entry point, returns 1 for lowercase, 0 for uppercasei. it takes a value c
+ *_islower - Entry point, takes int c as the argument
  *
  *Return: 1 for lower, 0 for upper
  */
