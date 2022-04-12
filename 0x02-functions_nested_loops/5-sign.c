@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *print_sign - funtction that prints positive and negative signs
- *
+ *@n: takes in an integer value
  * Return: 1 if positive, -1 if negatve, 0 if zero
  */
 int print_sign(int n)
@@ -11,7 +11,7 @@ int print_sign(int n)
 		_putchar(43);
 		return (1);
 	}
-	else if(n < 0)
+	else if (n < 0)
 	{
 		_putchar(45);
 		return (-1);
