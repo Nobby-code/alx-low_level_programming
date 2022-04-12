@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ *times_table - print times table
+ *@void: do not take in any value
+ *
+ */
 void times_table(void)
 {
 	int i, j, k;
