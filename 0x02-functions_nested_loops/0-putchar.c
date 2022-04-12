@@ -2,7 +2,7 @@
 /**
  *main - Entry point of the program to print _putchar
  *
- *Return: Always return 0 (success)
+ *Return: Always return 0 success
  */
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 8; i++)
 	{
-		_putchar(charas[c]);
+		_putchar(charas[i]);
 	}
 	_putchar('\n');
 	return (0);
