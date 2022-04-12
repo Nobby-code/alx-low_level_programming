@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *_islower - Entry point, takes int c as the argument
- *int c - Argument for the function
+ *@c - Takes in a character
  *Return: 1 for lower, 0 for upper
  */
 int _islower(int c)
