@@ -8,8 +8,10 @@
 int main(void)
 {
 	int i;
+	int max = 100;
 
-	for (i = 1; i <= 100; i++)
+	i = 1;
+	while (i <= max)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
@@ -21,7 +23,7 @@ int main(void)
 		}
 		else if (i % 5 == 0)
 		{
-			if (i < 100)
+			if (i < max)
 			{
 				printf("Buzz ");
 			}
@@ -32,10 +34,11 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
 		}
+		i++;
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
 
