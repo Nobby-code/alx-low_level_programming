@@ -5,9 +5,10 @@
  */
 int main(void)
 {
-	int value;
+	int i;
 
-	value = 0;
-	positive_or_negative(value);
+	i = 0;
+	positive_or_negative(i);
+
 	return (0);
 }
