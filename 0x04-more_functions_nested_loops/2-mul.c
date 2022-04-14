@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *mul - function multipies 2 ints
- *@a: first argumrnt 
+ *@a: first argument
  *@b: second argument
  *Return: Always 0
  */
