@@ -2,7 +2,6 @@
 
 /**
  *main - causes an infinite loop
- *@void: no argument
  *Return: 0
  */
 
