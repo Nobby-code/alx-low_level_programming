@@ -2,8 +2,8 @@
 
 /**
  *reset_to_98 - resets a pointer to 98
- *@*n - pointer parameter
- *@void - do not return anything
+ *@n: pointer parameter
+ *Return: do not return anything
  */
 
 void reset_to_98(int *n)
