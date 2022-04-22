@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_ctrcmp - function
+ *_strcmp - function
  *@s1: first argument
  *@s2: second argument
  *Return: return r if success
@@ -23,13 +23,13 @@ int _strcmp(char *s1, char *s2)
 	{
 		lim = a;
 	}
-	else 
+	else
 	{
 		lim = b;
 	}
 	while (c <= lim)
 	{
-		if (s1[c] = s2[c])
+		if (s1[c] == s2[c])
 		{
 			c++;
 			continue;
