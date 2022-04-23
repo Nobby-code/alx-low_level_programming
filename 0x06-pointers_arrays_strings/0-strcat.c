@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * *_strcat - function to concatenate string
  * @dest: agrgument
@@ -15,11 +17,13 @@ char *_strcat(char *dest, char *src)
 	{
 		c1++;
 	}
-	for (c2 = 0; src[c2], c2++)
+	for (c2 = 0; src[c2] != 0, c2++)
 	{
-		dest[c1++] = src[c2];
+		dest[c1] = src[c2];
+		c1++;
 
 	}
+	dest[c1] = '\0';
 
 	return (dest);
 }
