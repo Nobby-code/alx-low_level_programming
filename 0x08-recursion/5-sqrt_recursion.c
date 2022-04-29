@@ -14,7 +14,7 @@ int getSqrt(int a, int b)
 	{
 		return (b);
 	}
-	else if (b * b > a)
+	else if (b * b > a || b * b < a)
 	{
 		return (-1);
 	}
