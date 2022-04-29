@@ -14,11 +14,11 @@ int getSqrt(int a, int b)
 	{
 		return (b);
 	}
-	else if (b * b > a || b * b < a)
+	else if (b * b > a)
 	{
 		return (-1);
 	}
-	return (getSqrt(a, b - 1));
+	return (getSqrt(a, b + 1));
 }
 
 
