@@ -12,10 +12,10 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i,j, len1 = 0, len2 = 0;
+	unsigned int i, j, len1 = 0, len2 = 0;
 
 	char *ptr;
-	
+
 	if (s1 == 0)
 	{
 		s1 = "";
@@ -38,5 +38,5 @@ char *str_concat(char *s1, char *s2)
 		ptr[i] = s2[j];
 
 	return (ptr);
-	
+
 }
