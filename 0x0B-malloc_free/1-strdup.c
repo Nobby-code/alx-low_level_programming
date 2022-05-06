@@ -41,6 +41,5 @@ char *_strdup(char *str)
 			return (NULL);
 		spc[i] = str[i];
 		i++;
-	printf("%s", spc);	
 	return (spc);
 }
