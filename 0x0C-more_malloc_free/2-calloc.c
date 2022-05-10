@@ -12,16 +12,31 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *ptr;
-	ptr = calloc(nmemb, size);
+
+	int len, i;
+
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
+
+	len = nmemb * size;
+	ptr = malloc(len);
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 
+	for (i = 0; i < len; i++)
+	{
+		ptr[i] = 0;
+	}
+
 	return (ptr);
-	free(ptr);
+}
+
+int main(void)
+{
+	int *p = _calloc(20, 4);
+	printf("%d", *p);
 }
