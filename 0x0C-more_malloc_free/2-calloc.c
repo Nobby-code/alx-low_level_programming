@@ -35,9 +35,3 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	return (ptr);
 }
-
-int main(void)
-{
-	int *p = _calloc(10, 6);
-	printf("%d", *p);
-}
