@@ -11,7 +11,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
+	char *ptr;
 
 	int len = 0, i = 0;
 
@@ -34,4 +34,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 
 	return (ptr);
+}
+
+int main(void)
+{
+	int *p = _calloc(10, 6);
+	printf("%d", *p);
 }
