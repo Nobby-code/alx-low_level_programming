@@ -8,7 +8,7 @@
  *@max: the maximum value
  *
  * Return: If min > max or the func fails - NULL
- * 		Otherwise - a pointer to the newly created array
+ * Otherwise - a pointer to the newly created array
  */
 
 int *array_range(int min, int max)
@@ -17,8 +17,8 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	
-	size  max - min + 1;
+
+	size = max - min + 1;
 
 	ptr = malloc(sizeof(int) * size);
 	if (ptr == NULL)
@@ -29,5 +29,5 @@ int *array_range(int min, int max)
 		ptr[i] = min++;
 
 	return (ptr);
-	
+
 }
