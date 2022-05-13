@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 /**
- *new_dog - create a new dog
+ *new_dog - Creating a new struct dog
  *@name: dog name
  *@age: dog age
- *@owner: the owner 
+ *@owner: the owner
  *
- * Return : a pointer to the structure
+ * Return: a pointer to the structure
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
