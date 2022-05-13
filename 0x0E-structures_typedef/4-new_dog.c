@@ -2,93 +2,49 @@
 #include "dog.h"
 #include <stdlib.h>
 
-int _strlen(char *s);
-char *_strcpy(char *dest, char *src);
 /**
- *new_dog - function to creeate a new dog
- *@name: name of the created dog
- *@age: ae of the created dog
- *@owner: owner of the dog
+ *new_dog - create a new dog
+ *@name: dog name
+ *@age: dog age
+ *@owner: the owner 
  *
- * Return: Always 0
+ * Return : a pointer to the structure
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *cute_dog;
-	int name_len = 0, own_len = 0;
+	int i, j, k;
+	dog_t *p;
 
-	if (name != NULL && owner != NULL)
+	p = malloc(sizeof(dog_t));
+
+	if (p == NULL)
 	{
-		name_len = _strlen(name) + 1;
-		own_len = _strlen(owner) + 1;
-		cute_dog = malloc(sizeof(dog_t));
-
-		if (cute_dog == NULL)
-		{
-			return (NULL);
-		}
-
-		cute_dog->owner = malloc(sizeof(char) * name_len);
-
-		if (cute_dog->name == NULL)
-		{
-			free(cute_dog);
-			return (NULL);
-		}
-
-		cute_dog->owner = malloc(sizeof(char) * own_len);
-
-		if (cute_dog->owner == NULL)
-		{
-			free(cute_dog->name);
-			free(cute_dog);
-			return (NULL);
-		}
-
-		cute_dog->name = _strcpy(cute_dog->name, name);
-		cute_dog->owner = _strcpy(cute_dog->owner, owner);
-		cute_dog->age = age;
+		free(p);
+		return (NULL);
 	}
-	return (cute_dog);
-}
+	for (i = 0; name[i]; i++)
+		;
+	for (j = 0; owner[j]; j++)
+		;
+	p->name = malloc(i + 1);
+	p->owner = malloc(j + 1);
 
-/**
- *_strlen - Returns the length of a string
- *@s: string to count
- *
- *Return: String length
- */
-int _strlen(char *s)
-{
-	int c = 0;
-
-	for (; *s != '\0'; s++)
+	if (p->name == NULL || p->owner == NULL)
 	{
-		c++;
+		free(p->name), free(p->owner), free(p);
+		return (NULL);
 	}
-	return (c);
-}
-
-/**
- *_strcpy - copy a string
- *@dest: destination value
- *@src: source value
- *
- * Return: The pointer tto dest
- */
-
-char *_strcpy(char *dest, char *src)
-{
-	int i;
-
-	for (i = 0; src[i] != '\0'; i++)
+	for (k = 0; k < i; k++)
 	{
-		dest[i] = src[i];
+		p->name[k] = name[k];
 	}
-
-	dest[i++] = '\0';
-
-	return (dest);
+	p->name[k] = '\0';
+	for (k = 0; k < j; k++)
+	{
+		p->owner[k] = owner[k];
+	}
+	p->owner[k] = '\0';
+	p->age = age;
+	return (p);
 }
-
