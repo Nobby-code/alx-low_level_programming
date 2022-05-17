@@ -12,14 +12,18 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	if (n == 0)
-		return (0);
+
+	unsigned int i;
+
+	int sum = 0;
 
 	va_list add;
 
+	if (n == 0)
+		return (0);
+
 	va_start(add, n);
 
-	int i, sum = 0;
 
 	for (i = 0; i < n; i++)
 	{
@@ -28,4 +32,9 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_end(add);
 	return (sum);
+}
+
+int main(void)
+{
+	printf("%d\n", sum_them_all(4, 2,2,2,2));
 }
