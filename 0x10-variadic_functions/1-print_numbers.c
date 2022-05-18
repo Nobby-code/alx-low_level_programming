@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
- *pprint_numbers - a function to print numbers
+ *print_numbers - a function to print numbers
  *@separator: character to separate numbers
  *@n: the number of characters
  *
@@ -18,25 +18,28 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	unsigned int i;
 
-	va_list v_list;
+	va_list list;
 
 	if (separator == NULL)
 		s = "";
 
+	s = (char *) separator;
 
-	va_start(v_list, n);
+	va_start(list, n);
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(v_list, unsigned int));
+		printf("%d%s", va_arg(list, unsigned int), s);
+	
 		if (i == n)
-		{
 			break;
-		}
-
-		printf("%s", s);
 	}
 	printf("\n");
 
-	va_end(v_list);
+	va_end(list);
+}
+
+int main(void)
+{
+	print_numbers(", ", 4, 2, 3, 4, 6);
 }
