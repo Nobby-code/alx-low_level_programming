@@ -38,8 +38,3 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_end(list);
 }
-
-int main(void)
-{
-	print_numbers(", ", 4, 2, 3, 4, 6);
-}
