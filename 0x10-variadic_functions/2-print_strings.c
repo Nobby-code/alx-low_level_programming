@@ -42,8 +42,3 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	printf("\n");
 	va_end(str);
 }
-
-int main(void)
-{
-	print_strings(", ", 3, "Trecy", "Emma");
-}
