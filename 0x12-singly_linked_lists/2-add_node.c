@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *_strlen - function that returns the length of a string
+ *str_len - function that returns the length of a string
  *@s: the character string
  *
  *Return: the string
@@ -30,7 +30,9 @@ int str_len(const char *s)
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new = malloc(sizeof(list_t));
+	list_t *new;
+
+	new = malloc(sizeof(list_t));
 
 	if (new == NULL)
 		return (NULL);
