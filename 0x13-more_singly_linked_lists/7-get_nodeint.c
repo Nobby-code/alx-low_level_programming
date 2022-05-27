@@ -5,6 +5,7 @@
  *get_nodeint_at_index - getting the node at a given ines
  *@head: head pointer
  *@index: the index of the node
+ *Return: return the node
  */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
