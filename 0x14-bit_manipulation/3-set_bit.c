@@ -14,10 +14,8 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	if (index >= 64)
 		return (-1);
-	else
-	{
-		val = 1 << index;
-		*n = *n | val;
-		return (1);
-	}
+
+	val = 1 << index;
+	*n = *n | val;
+	return (1);
 }
