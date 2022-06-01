@@ -13,7 +13,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int value = 0, pow = 0;
+	unsigned int value = 0, pow = 1;
 
 	int i;
 
@@ -27,13 +27,19 @@ unsigned int binary_to_uint(const char *b)
 	while (i >= 0)
 	{
 		if (b[i] != '0' && b[i] != '1')
-		{
 			return (0);
-		}
 		if (b[i] == '1')
 			value = value + pow;
 		i--;
 		pow = pow + pow;
 	}
 	return (value);
+}
+
+int main(void)
+{
+	unsigned int n;
+
+	n = binary_to_uint("111");
+	printf("%u\n", n);
 }
