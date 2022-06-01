@@ -35,11 +35,3 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (value);
 }
-
-int main(void)
-{
-	unsigned int n;
-
-	n = binary_to_uint("111");
-	printf("%u\n", n);
-}
