@@ -1,3 +1,5 @@
+
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -34,4 +36,11 @@ unsigned int binary_to_uint(const char *b)
 		pow = pow + pow;
 	}
 	return (value);
+}
+int main(void)
+{
+	unsigned int n;
+
+	n = binary_to_uint("11001");
+	printf("%u\n", n);
 }
