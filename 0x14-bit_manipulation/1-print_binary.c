@@ -10,14 +10,14 @@
  *
  */
 
-void prinnt_binary(unsigned long int n)
+void print_binary(unsigned long int n)
 {
 	if (n == 0)
 	{
 		putchar('0');
 	}
 
-	else if(n == 1)
+	else if (n == 1)
 	{
 		putchar('0' + 1);
 	}
