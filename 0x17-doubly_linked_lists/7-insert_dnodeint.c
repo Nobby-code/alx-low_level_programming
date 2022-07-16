@@ -7,7 +7,7 @@
  *@n: the integer number to be inserted
  *Return: return the new node
  */
-
+/*
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *temp, *new_node;
@@ -38,4 +38,37 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		count++;
 	}
 	return (new_node);
+}*/
+
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
+{
+	dlistint_t *currentnode;
+	dlistint_t *newnode;
+
+	while (*h)
+	{
+		newnode = malloc(sizeof(dlistint_t));
+		currentnode = *h;
+		newnode->n = n;
+
+		if (idx == 0)
+		{
+			newnode->next = NULL;
+			return (newnode);
+		}
+		while (currentnode->next != NULL && idx - 1 > 0)
+		{
+			currentnode = currentnode->next;
+			idx--;
+		}
+		if (currentnode->next == NULL)
+		{
+			free(newnode);
+			return (NULL);
+		}
+		newnode->next = currentnode->next;
+		currentnode->next = newnode;
+		return (newnode);
+	}
+	return (NULL);
 }
