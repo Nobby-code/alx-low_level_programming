@@ -37,6 +37,7 @@ void hash_table_print(const hash_table_t *ht)
 				else
 				{
 					printf("'%s': '%s'", temp->key, temp->value);
+					flag = 0;
 				}
 				temp = temp->next;
 			}
