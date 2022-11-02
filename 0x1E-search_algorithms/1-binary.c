@@ -3,8 +3,8 @@
 /**
  *print_array - function to print array with limits in left and right
  *@array: array to print
- *@left: left limit
- *@right: right limit
+ *@i: iteration
+ *@size: size limit
  *
  *Return: void (nothing)
  */
@@ -30,10 +30,10 @@ void print_array(int *array, size_t i, size_t size)
 }
 
 /**
- * binary_search: funrion to use binarysearch algorithm
- * array: the array to search the value from
- * size: length of the array
- *value: the value to search from the array
+ * binary_search - funrion to use binarysearch algorithm
+ * @array: the array to search the value from
+ * @size: length of the array
+ *@value: the value to search from the array
  *
  *Return: return the index of the value, or -1 if absent
  */
