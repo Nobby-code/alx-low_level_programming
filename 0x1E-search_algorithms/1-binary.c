@@ -1,35 +1,6 @@
 #include "search_algos.h"
 
 /**
- *print_array - function to print array with limits in left and right
- *@array: array to print
- *@i: iteration
- *@size: size limit
- *
- *Return: void (nothing)
- */
-
-void print_array(int *array, size_t i, size_t size)
-{
-
-	printf("Searching in array: ");
-
-	while (i < size)
-	{
-		if (i + 1 == size)
-		{
-			printf("%d ", array[i]);
-		}
-		else
-		{
-			printf("%d, ", array[i]);
-		}
-		i++;
-	}
-	printf("\n");
-}
-
-/**
  * binary_search - funrion to use binarysearch algorithm
  * @array: the array to search the value from
  * @size: length of the array
@@ -40,18 +11,24 @@ void print_array(int *array, size_t i, size_t size)
 
 int binary_search(int *array, size_t size, int value)
 {
-	int left =  0, right = size - 1;
-	int mid;
+	int left = 0, right = size - 1, mid, i;
 
-	while (left < right)
+	while (left <= right)
 	{
-		print_array(array, left, size);
+		printf("Searching in array: ");
+
+		for (i = left; i <= right; i++)
+		{
+			i < right ? printf("%d, ", array[i]) : printf("%d\n", array[i]);
+		}
+
 		mid = (left + right) / 2;
 
 		if (value == array[mid])
 		{
 			return (mid);
 		}
+
 		else if (value < array[mid])
 		{
 			right = mid - 1;
